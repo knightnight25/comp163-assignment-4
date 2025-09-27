@@ -75,3 +75,35 @@ elif study_choice not in study_options:
 print("New stats after study decision")
 print(f"New Current GPA: {current_gpa}")
 print(f"New Social Points: {social_points}")
+
+type_choice = input("Enter a number 0-5: ")
+if type_choice is int:
+    print(end="")
+elif type_choice is not int:
+    print("Choose a valid number")
+
+if current_gpa >= 3.5:
+    if social_points >= 30:
+        print(f"Ending 1: Star Student")
+        print("You maintained good grades and a social life")
+    else:
+        print("Ending 2: Academic Weapon")
+        print("You maintained an amazing GPA, but your social life suffered")
+    
+elif current_gpa >= 2.5:
+    if stress_level <= 35:
+        print("Ending 3: Low stress student")
+        print("You achived an okay GPA without burning out")
+    else:
+        print("Ending 4: Stress student")
+        print("Your GPA is okay, but your stress levels put you at risk for burnout")
+    
+else:
+    print("Ending 5: Bad student")
+    print("Your GPA is failing you need to reasses your study habits")
+
+print("Final Stats")
+print(f"Final GPA: {current_gpa:.2f}")
+print(f"Final Study Hours: {study_hours}")
+print(f"Final Social Points: {social_points}")
+print(f"Final Stress Level: {stress_level}")
