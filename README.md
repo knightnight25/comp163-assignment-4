@@ -1,1 +1,2 @@
 # comp163-assignment-4
+This project is a command line game that tracks GPA, Study Hours, Social Points, and Stress Levels. The program is structured into 4 steps 1 being the starting stats, 2 being the course planning decision, 3 being the study stategy decision, and 4 being the final stats. In this program logical and membership operators were used as well as comparison and identity operators and if/elif/else statements
